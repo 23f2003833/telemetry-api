@@ -27,8 +27,7 @@ async def options_handler():
 # Load telemetry data from the file
 # Get the directory where this file is located
 current_dir = os.path.dirname(os.path.abspath(__file__))
-# Go up one level to the project root, then find telemetry.json
-telemetry_path = os.path.join(os.path.dirname(current_dir), 'telemetry.json')
+telemetry_path = os.path.join(current_dir, 'telemetry.json')
 
 # If telemetry.json is in the same directory as this file, use this instead:
 # telemetry_path = os.path.join(current_dir, 'telemetry.json')
